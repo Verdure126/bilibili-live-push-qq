@@ -9,15 +9,15 @@ const http = require('http')
 // {name} {title} {room_id}
 const room_list = [
   {
-    room_id: 23251345,  // 直播间 id
-    name: '千零莉露卡', // 主播名字或昵称
+    room_id: 1603600,  // 直播间 id
+    name: '小缘', // 主播名字或昵称
     status: 0,  // 直播状态，不需要改
     cover: '',  // 封面图，不需要改
     send_cover: true, // 是否发送直播间封面图片
     title: '', // 直播间标题，不需要改
     interval: 60000,  // 多久查询一次直播状态，默认 1 分钟查询一次
-    qq_group: 11111111, // 发送消息到哪个 QQ 群里。设置为 0 则不发送
-    qq_person: 111111111, // 发送消息到哪个 QQ 号上（即私聊）。设置为 0 则不发送。如果需要发送，建议先加好友，不知道对陌生人能不能发送
+    qq_group: 772468534, // 发送消息到哪个 QQ 群里。设置为 0 则不发送
+    qq_person: 1204044878, // 发送消息到哪个 QQ 号上（即私聊）。设置为 0 则不发送。如果需要发送，建议先加好友，不知道对陌生人能不能发送
     msg: [             // 当直播状态变化时要发送的提醒消息
       '{name}尚未开播', // 0 尚未开播的提醒消息
       '{name}正在直播：{title} https://live.bilibili.com/{room_id}', // 1 正在直播的提醒消息
@@ -26,7 +26,7 @@ const room_list = [
   },
   {
     room_id: 510,
-    name: '小孩梓',
+    name: '随缘派',
     status: 0,
     cover: '',
     send_cover: true,
